@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Cities Dataset</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -12,12 +12,93 @@
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<style type="text/css">
+			  .fragment.spotlight {
+				transform: translateY(100px);
+				  transform-origin: 0 0;
+			  }
+			  .fragment.spotlight.visible {
+				transform: none;
+				  color: #555
+			  }
+			  .fragment.spotlight.current-fragment {
+				transform: scale(1.1);
+				  color: white;
+			  }
+			  .box {
+				padding: 10px; /* Some padding inside the box */
+				box-sizing: border-box; /* To include padding in the box's width */
+				margin: 10px 0; /* Margin for spacing */
+				text-align: center; /* To center text inside the box */
+			  }
+
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-background-color="black">
+					<h3>
+						Global <span class="fragment highlight-blue"> cities </span> dataset
+					</h3>
+					<br>
+					<span class="fragment"> Andrea Musso </span>
+				</section>
+				<section data-background-image="assets/Slide1.jpeg"> </section>
+				<section data-background-image="assets/Slide2.jpeg"> </section>
+				<section data-background-image="assets/Slide3.jpeg"> </section>
+				<section data-background-image="assets/Slide4.jpeg"> </section>
+				<section data-background-color="black"> Dataset <span class="fragment highlight-blue"> content </span>
+					<div>
+					<ul>
+					  <li class="fragment spotlight">Uniformly defined cities</li>
+					  <li class="fragment spotlight">From 1975 to 2025</li>
+						<li class="fragment spotlight">City shapefiles</li>
+						<li class="fragment spotlight">Geocoded by country</li>
+					</ul>
+						<span class="fragment"> <img src="assets/ghsl.png"  height="200"> </span>
+					</div>
+				</section>
+				<section data-background-iframe="assets/map_1980_MAR.html"  data-background-interactive> </section>
+				<section data-background-iframe="assets/map_2020_MAR.html"  data-background-interactive> </section>
+				<section data-background-iframe="assets/map_1980_MEX.html"  data-background-interactive> </section>
+				<section data-background-iframe="assets/map_2020_MEX.html"  data-background-interactive> </section>
+				<section data-background-iframe="assets/map_2020_USA.html"  data-background-interactive> </section>
+				<section data-background-color="black"> Possible <span class="fragment highlight-blue"> extensions </span> in collaboration with the <br>
+					<span class="fragment highlight-blue"> Growth Lab </span>
+					<div>
+					<ul>
+					  <li class="fragment spotlight">USA 1850-2020 (IPUMS and Census)</li>
+					  <li class="fragment spotlight">Global 1975-2025 (Metroverse and Dun & Bradstreet)</li>
+					</ul>
+					</div>
+				</section>
+				<section data-background-iframe="assets/map_ipums_1880.html"  data-background-interactive> </section>
+				<section data-background-color="black">  <span class="fragment highlight-blue"> USA 1850-2020 </span> (IPUMS and Census)
+					<div>
+					<ul>
+					  <li class="fragment spotlight">Uniformly defined cities</li>
+						<li class="fragment spotlight">City shapefiles</li>
+						<li class="fragment spotlight">Population</li>
+					  <li class="fragment spotlight">Employment by industry</li>
+					</ul>
+					</div>
+				</section>
+				<section data-background-color="black">  <span class="fragment highlight-blue"> Global 1975-2025 </span> (Metroverse and Dun & Bradstreet)
+					<div>
+					<ul>
+					  <li class="fragment spotlight">Uniformly defined cities</li>
+						<li class="fragment spotlight">City shapefiles</li>
+						<li class="fragment spotlight">Population</li>
+					  <li class="fragment spotlight">Employment by industry</li>
+					</ul>
+					</div>
+				</section>
+				<section>
+					<img src="assets/qr_code.png", height="800px">
+				</section>
+
+
 			</div>
 		</div>
 
